@@ -9,7 +9,7 @@ function TaskList({tasks, removeTask}) {
           key={index}
           text={task.text}
           category={task.category}
-          deleteTask={() => removeTask(index)}>
+          removeTask={() => removeTask(index)}>
            </Task>)
       })}
     </div>
