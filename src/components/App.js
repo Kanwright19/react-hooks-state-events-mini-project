@@ -29,7 +29,7 @@ function App() {
       <CategoryFilter categories={CATEGORIES} onCategoryChange={handleCategoryChange}/>
       <NewTaskForm categories={CATEGORIES.filter(category => category !== "All")}
       onTaskFormSubmit={handleTaskFormSubmit}/>
-      <TaskList tasks={visibleTasks} deleteTask={deleteTask}/>
+      <TaskList tasks={visibleTasks} removeTask={removeTask}/>
     </div>
   );
 }
